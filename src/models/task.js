@@ -14,8 +14,8 @@ const Task = mongoose.model("Tasks", {
     owner: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        ref: 'User',
-    }
+        ref: "User",
+    },
 });
 
 module.exports = Task;
