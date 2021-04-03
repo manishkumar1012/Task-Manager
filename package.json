@@ -4,7 +4,8 @@
   "description": "",
   "main": "mongodb.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env node src/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "nodemailer": "^6.5.0",
     "sharp": "^0.27.2",
     "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }
